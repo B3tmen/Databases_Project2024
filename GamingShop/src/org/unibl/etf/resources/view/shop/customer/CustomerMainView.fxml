@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="1130.0" stylesheets="@../../../css/CustomerMainCss.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" > <!-- fx:controller="org.unibl.etf.controllers.customer.CustomerMainShopController" -->
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f5f6fa;">
+         <children>
+            <BorderPane prefHeight="616.0" prefWidth="935.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="96.0" prefWidth="935.0" style="-fx-background-color: #2c3e50;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane layoutX="741.0" layoutY="10.0" prefHeight="85.0" prefWidth="180.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <Button fx:id="shoppingCartButton" layoutX="6.0" layoutY="3.0" mnemonicParsing="false" onAction="#showShoppingCartWindowAction" style="-fx-background-color: transparent;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="fas-shopping-cart" iconSize="35" />
+                                 </graphic>
+                              </Button>
+                              <Label layoutX="92.0" layoutY="9.0" text="Shopping cart" textFill="WHITE" />
+                              <Label fx:id="numberOfCartItemsLabel" layoutX="62.0" layoutY="6.0" prefHeight="20.0" prefWidth="20.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <HBox layoutX="92.0" layoutY="30.0" prefHeight="32.0" prefWidth="85.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="cartPriceLabel" text="0.00" textFill="WHITE" />
+                                    <Label text="KM" textFill="WHITE" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER_LEFT" layoutY="20.0" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: #2c3e50;">
+                           <children>
+                              <Button fx:id="sideBarButton" mnemonicParsing="false" onMouseClicked="#hideSideBar">
+                                 <graphic>
+                                    <FontIcon fx:id="sidebarButtonIcon" iconColor="WHITE" iconLiteral="fas-bars" iconSize="25" />
+                                 </graphic></Button>
+                              <Label text="PRODUCTS" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label layoutX="152.0" layoutY="30.0" text="Welcome," textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="customerUsernameLabel" layoutX="223.0" layoutY="25.0" text="customer username" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <VBox prefHeight="520.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox fx:id="sideBarContainerVBox" prefHeight="484.0" prefWidth="100.0" style="-fx-background-color: #2c3e50;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="accountButton" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAccountDetailsAction" prefHeight="80.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Account" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="fas-user-cog" iconSize="20" />
+                                 </graphic>
+                              </Button>
+                              <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHomeAllProductsAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Home" textFill="WHITE">
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="fas-home" iconSize="20" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="PCComponentsButton" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllPcComponentsAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="PC components" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="fas-server" iconSize="20" />
+                                 </graphic>
+                              </Button>
+                              <VBox fx:id="dropDownPCComponentsVbox" prefHeight="178.0" prefWidth="150.0">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllProcessorsAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Processors" textFill="WHITE">
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="fas-microchip" iconSize="16" />
+                                       </graphic></Button>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllGraphicsCardsAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Graphics Cards" textFill="WHITE">
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="fas-tachometer-alt" iconSize="16" />
+                                       </graphic></Button>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllRamAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="RAM" textFill="WHITE">
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="fas-memory" iconSize="16" />
+                                       </graphic></Button>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllStorageAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Storage" textFill="WHITE">
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="far-hdd" iconSize="16" />
+                                       </graphic></Button>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllMotherboardsAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Mother Boards" textFill="WHITE">
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="fas-chalkboard" iconSize="16" />
+                                       </graphic></Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding></VBox>
+                              <Button fx:id="PCPeripheralsButton" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllPcPeripheralsAction" prefHeight="80.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="PC peripherals" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="far-keyboard" iconSize="20" />
+                                 </graphic>
+                              </Button>
+                              <VBox fx:id="dropDownPCPeripheralsVBox" prefHeight="136.0" prefWidth="150.0">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllKeyboardsAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Keyboards" textFill="WHITE">
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="far-keyboard" iconSize="16" />
+                                       </graphic></Button>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllMiceAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Gaming Mice" textFill="WHITE">
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="fas-mouse" iconSize="16" />
+                                       </graphic></Button>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllHeadphonesAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Headphones" textFill="WHITE">
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="fas-headphones" iconSize="16" />
+                                       </graphic></Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding></VBox>
+                              <Button fx:id="consolesButton" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllConsolesAction" prefHeight="80.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Consoles" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="fas-terminal" iconSize="20" />
+                                 </graphic>
+                              </Button>
+                              <VBox fx:id="dropDownConsolesVBox" prefHeight="133.0" prefWidth="150.0">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllPlaystationAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Playstation" textFill="WHITE">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="fab-playstation" iconSize="16" />
+                                       </graphic>
+                                    </Button>
+                                    <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllXboxAction" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="XBox" textFill="WHITE">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <graphic>
+                                          <FontIcon iconColor="WHITE" iconLiteral="fab-xbox" iconSize="16" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></VBox>
+                              <Button fx:id="gamesButton" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllGamesAction" prefHeight="80.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Games" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="fas-gamepad" iconSize="16" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="cablesButton" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAllCablesAction" prefHeight="80.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Cables and adapters" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="fas-plug" iconSize="20" />
+                                 </graphic>
+                              </Button>
+                              <AnchorPane prefHeight="84.0" prefWidth="150.0" VBox.vgrow="ALWAYS" />
+                              <Button fx:id="logOutButton" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#logOutAction" prefHeight="80.0" style="-fx-background-color: #2c3e50;" styleClass="sideBarItem" text="Log out" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="fas-sign-out-alt" iconSize="20" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <AnchorPane fx:id="mainContentAnchorPane" prefHeight="200.0" prefWidth="1079.0" style="-fx-background-color: #f5f6fa;" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox fx:id="titleContainerHBox" alignment="CENTER" layoutX="-150.0" layoutY="14.0" prefHeight="161.0" prefWidth="1120.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="119.0" prefWidth="250.0">
+                                 <children>
+                                    <Label text="Welcome to Gaming Shop" textFill="#2c3e50">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <FontIcon iconColor="#2c3e50" iconLiteral="fas-shopping-bag" iconSize="50" />
+                                    <Label text="We are happy to see You here" textFill="#2c3e50">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fitHeight="152.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../media/images/products/ps5-controller.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <AnchorPane fx:id="productContainerAnchorPane" layoutX="14.0" layoutY="195.0" prefHeight="292.0" prefWidth="960.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="200.0">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <children>
+                              <Label layoutX="10.0" layoutY="14.0" text="Our offers" textFill="#2c3e50">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <ScrollPane layoutX="14.0" layoutY="46.0" prefHeight="383.0" prefWidth="947.0" styleClass="transparentBg" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="50.0">
+                                 <content>
+                                    <GridPane fx:id="productContainerGridPane" prefHeight="11.0" prefWidth="0.0" styleClass="transparent">
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

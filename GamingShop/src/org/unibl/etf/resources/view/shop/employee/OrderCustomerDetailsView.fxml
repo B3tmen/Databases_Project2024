@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"> <!-- fx:controller="org.unibl.etf.controllers.employee.EmployeeOrdersCustomerDetailsController" -->
+   <children>
+      <Label layoutX="41.0" layoutY="80.0" text="First name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastNameTextField" editable="false" layoutX="253.0" layoutY="97.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="253.0" layoutY="80.0" text="Last name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="161.0" text="Country / Region">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="countryTextField" editable="false" layoutX="37.0" layoutY="188.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="251.0" layoutY="161.0" text="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addressTextField" editable="false" layoutX="251.0" layoutY="191.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="257.0" layoutY="264.0" text="ZIP code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="zipCodeTextField" editable="false" layoutX="255.0" layoutY="292.0" prefHeight="27.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="40.0" layoutY="263.0" text="City">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cityTextField" editable="false" layoutX="39.0" layoutY="294.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="253.0" layoutY="383.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phoneNumberTextField" editable="false" layoutX="40.0" layoutY="403.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="39.0" layoutY="383.0" text="Phone number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTextField" editable="false" layoutX="253.0" layoutY="403.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="firstNameTextField" editable="false" layoutX="39.0" layoutY="97.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

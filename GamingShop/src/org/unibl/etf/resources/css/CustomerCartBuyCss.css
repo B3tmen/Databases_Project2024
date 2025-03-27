@@ -1,0 +1,38 @@
+.button:hover{
+    -fx-cursor: hand;
+}
+/*---------------------------*/
+
+.removeFromCartButton {
+    -fx-background-color: #ff5252;
+    -fx-font-weight: bold;
+    -fx-border-color: #ff5252;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+}
+
+.removeFromCartButton:hover {
+    -fx-opacity: 0.6;
+}
+
+.deleteIcon {
+    -fx-fill: white;
+}
+
+/*---------------------------*/
+
+.orderButton {
+    -fx-background-color: #0984e3;
+    -fx-font-weight: bold;
+    -fx-border-color: #0984e3;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+}
+
+.orderButton:hover {
+    -fx-opacity: 0.6;
+}
+
+.orderIcon {
+    -fx-fill: white;
+}

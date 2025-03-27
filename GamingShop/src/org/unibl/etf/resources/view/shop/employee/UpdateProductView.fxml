@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="476.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"> <!-- fx:controller="org.unibl.etf.controllers.employee.EmployeeUpdateProductController" -->
+   <children>
+      <Pane layoutX="24.0" layoutY="20.0" prefHeight="382.0" prefWidth="708.0" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <TextField fx:id="productQuantityTextField" layoutX="83.0" layoutY="142.0" prefHeight="32.0" prefWidth="71.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="productPriceTextField" layoutX="83.0" layoutY="92.0" prefHeight="32.0" prefWidth="71.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="productNameTextField" layoutX="83.0" layoutY="42.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="productDescriptionTextArea" layoutX="83.0" layoutY="266.0" prefHeight="149.0" prefWidth="239.0" wrapText="true" />
+            <TextField fx:id="productWarrantyTextField" layoutX="83.0" layoutY="195.0" prefHeight="32.0" prefWidth="71.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="13.0" layoutY="53.0" text="Name" />
+            <Label layoutX="16.0" layoutY="103.0" text="Price" />
+            <Label layoutX="15.0" layoutY="153.0" text="Qty" />
+            <Label layoutX="8.0" layoutY="195.0" prefHeight="39.0" prefWidth="52.0" text="Warranty (months)" wrapText="true" />
+            <Label layoutX="11.0" layoutY="266.0" text="Description" />
+            <TextField fx:id="productImageUrlTextField" layoutX="489.0" layoutY="42.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: #2c3e50; -fx-border-width: 0 0 2 0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="363.0" layoutY="50.0" text="Image path" />
+            <Button layoutX="645.0" layoutY="49.0" mnemonicParsing="false" onAction="#chooseImageAction" text="..." />
+            <ImageView fx:id="productImageView" fitHeight="150.0" fitWidth="200.0" layoutX="363.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="discountButton" layoutX="351.0" layoutY="340.0" mnemonicParsing="false" onAction="#viewDiscountAction" prefHeight="35.0" prefWidth="121.0" text="View discount">
+               <graphic>
+                  <FontIcon iconLiteral="fas-tag" />
+               </graphic>
+            </Button>
+            <Label layoutX="355.0" layoutY="265.0" text="Update manufacturer" />
+            <ComboBox fx:id="manufacturerComboBox" layoutX="489.0" layoutY="261.0" prefHeight="25.0" prefWidth="142.0" />
+            <Label layoutX="355.0" layoutY="300.0" text="Update category" />
+            <ComboBox fx:id="categoryComboBox" layoutX="488.0" layoutY="296.0" prefHeight="25.0" prefWidth="142.0" />
+         </children>
+      </Pane>
+      <Button layoutX="728.0" layoutY="583.0" mnemonicParsing="false" onAction="#finishUpdatingProductAction" prefHeight="39.0" prefWidth="102.0" text="Finish Update" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="47.0" />
+   </children>
+</AnchorPane>

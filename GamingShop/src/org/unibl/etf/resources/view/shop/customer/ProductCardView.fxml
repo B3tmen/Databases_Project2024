@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane fx:id="anchorPaneCardContainer" minWidth="-Infinity" prefHeight="500.0" prefWidth="343.0" stylesheets="@../../../css/CustomerProductCardCss.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"> <!-- fx:controller="org.unibl.etf.controllers.customer.ProductCardController" -->
+   <children>
+      <VBox layoutX="218.0" layoutY="78.0" prefHeight="606.0" prefWidth="513.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox minWidth="-Infinity" prefHeight="254.0" prefWidth="284.0">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <center>
+                        <ImageView fx:id="productImageView" fitHeight="232.0" fitWidth="274.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="154.0" prefWidth="246.0" spacing="10.0" style="-fx-background-color: #bdc3c7;" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox fx:id="priceLabelHolderHBox" alignment="CENTER" prefHeight="47.0" prefWidth="343.0">
+                     <children>
+                        <Label fx:id="productPriceLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="32.0" prefWidth="200.0" text="1300 BAM">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="productNameLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="32.0" prefWidth="293.0" text="NVidia GeForce RTX 4090" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="viewProductButton" mnemonicParsing="false" onAction="#viewProductDetailsAction" prefHeight="32.0" prefWidth="147.0" styleClass="viewButton" text="VIEW" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="addToCartButton" mnemonicParsing="false" onAction="#addProductToCartAction" prefHeight="32.0" prefWidth="147.0" styleClass="addToCartButton" text="ADD TO CART" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Rating fx:id="reviewRating" disable="true" partialRating="true" rating="0.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+Pisano, 2024.
+
+Potrebno je imati JavaFX20 biblioteku i dodati kao Dependency u Project Settings (InteliJ IDEA). 
+
+Koristen je JDK 21 LTS.
+
+Dodatno, potrebno je imati i JAR fajlove za FontAwesome ikonice i isto ih dodati kao Dependency. 
+Postoje 4 JAR fajla:
+ - controlsfx-11.2.1
+ - ikonli-core
+ - ikonli-fontawesome5-pack
+ - ikonli-javafx
+
+Isto tako treba ove JAR fajlove dodati u SceneBuilder, preko malenog zupčanika pored search bar-a "Library",
+pa JAR/FXML Manager -> 'Add libraries from file system'
+================================
+JavaFX GUI koristi FXCSS fajlove za stil. Dodati .css fajl, pri cemu
+	- generalni stilovi pocinju sa tačkom '.' praćene imenom GUI komponente (primjer .button ili .text-field)
+	- stilovi sa fx:id-em pocinju sa hash-om '#' (primjer #searchBarTextField)

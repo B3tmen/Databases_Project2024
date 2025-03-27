@@ -1,0 +1,17 @@
+.button{
+    -fx-cursor: hand;
+}
+
+.signInButton, .registerButton {
+    -fx-background-color:  #31087b;
+    -fx-border-color:  #31087b;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+}
+
+.signInButton:hover, .registerButton:hover {
+    -fx-background-color: white;
+    -fx-border-color:  #31087b;
+    -fx-border-width: 2px;
+    -fx-text-fill:  #31087b;
+}

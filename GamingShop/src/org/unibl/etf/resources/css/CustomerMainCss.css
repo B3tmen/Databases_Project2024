@@ -1,0 +1,39 @@
+/* ---------- General css ----------- */
+
+.sideBarItem{
+    -fx-background-color:  #2c3e50;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.sideBarItem:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #146886 !important;
+    -fx-background-radius: 0;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+.transparentBg{
+    -fx-background-color: transparent;
+}
+
+/* ---------- FX:ID css ----------- */
+#searchBarTextField{
+
+}
+
+
+#sideBarButton{
+    -fx-background-color: transparent;
+}
+#sideBarButton:hover{
+    -fx-background-color: #146886;
+    -fx-cursor: hand;
+}
+
+#sideBarContainerVBox{
+    -fx-background-color:  #2c3e50;
+}
+
