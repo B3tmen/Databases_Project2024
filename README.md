@@ -21,26 +21,26 @@ Customers can view products, add them to the shopping cart and complete orders. 
 ## 📷 Screenshots
 
 ## - Login
-![image](https://github.com/user-attachments/assets/8de2c2af-482c-481f-93c7-6346cd711ab7)
+![login](https://github.com/user-attachments/assets/9b02c9aa-ad2c-46e2-b643-2c7292694b3b)
 ## - Registration
-![image](https://github.com/user-attachments/assets/98db0680-ba9c-4900-9d0a-b2d8a32de59e)
+![registration](https://github.com/user-attachments/assets/ddfabf79-cbed-48c9-8af7-c7b69cdae6ee)
 ## - Customer main page
-![image](https://github.com/user-attachments/assets/49bfcb14-dc8b-4cc5-935e-b1b576d8b925)
+![customer_main_page](https://github.com/user-attachments/assets/6f31983c-89a7-4f99-b006-5632aac307fb)
 ## - Sidebar menu demonstration
-![image](https://github.com/user-attachments/assets/ecaadddd-3b30-47de-8caa-98b62032f067)
-![image](https://github.com/user-attachments/assets/0b3e83b2-a5d0-49dd-a10f-1364c2016cfa)
+![sidebar_navigation_1](https://github.com/user-attachments/assets/306a67dc-5b97-41d7-86c3-ebb6e0ab2309)
+![sidebar_navigation_2](https://github.com/user-attachments/assets/879c5c20-f684-4ab9-97ec-765d5ea62c2e)
 ## - Product details
-![image](https://github.com/user-attachments/assets/b9ee11bf-9b06-4397-b99b-82ae8f4390b8)
+![product_details](https://github.com/user-attachments/assets/bac57849-b240-481c-bb57-f8d5e8d7c5b9)
 ## - Shopping cart
-![image](https://github.com/user-attachments/assets/253ed14d-e21e-46c1-9b30-07e81062fb8b)
+![shopping_cart](https://github.com/user-attachments/assets/def2fa19-97ad-4049-a90b-26a40072a0a1)
 
 --- 
 
 ## - Employee application, products and orders management page
-![image](https://github.com/user-attachments/assets/8dd47514-b821-4aca-91a8-b5482e47e1f0)
-![image](https://github.com/user-attachments/assets/0b8acdad-f033-4854-83a2-aa912298938b)
+![employee_products_management](https://github.com/user-attachments/assets/601373b8-5983-4817-9cd2-d55c655aed0a)
+![employee_orders_management](https://github.com/user-attachments/assets/260343ea-83ff-47d9-b68c-f8218f028cae)
 
 ---
 
 ## - Administrator application
-![image](https://github.com/user-attachments/assets/9116b493-ffa5-4416-bf55-c444ec60ef39)
+![admin_app](https://github.com/user-attachments/assets/d5e514a1-1f12-4e67-8069-fae4361655c6)
